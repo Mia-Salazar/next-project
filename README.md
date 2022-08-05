@@ -1,5 +1,5 @@
-# Mia Salazar, Galatic Front-end Developer
- Mia Salazar's portfolio made with React.
+# Project made with Next
+A personal project made with Next to give this technology a shot 
 
 ## Available Scripts
 
