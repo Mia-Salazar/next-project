@@ -4,7 +4,7 @@ import Layout from "../../components/Layout"
 import Nav from "../../components/Nav"
 import styles from '../../styles/Home.module.css'
 
-export default function Timeline() {
+export default function Timeline({userName}) {
     return (
         <div className={styles.container}>
         <Head>
@@ -17,8 +17,14 @@ export default function Timeline() {
           <h1>
             This is timeline
           </h1>
+          <h2>Name: {userName}</h2>
         </Layout>
       </div>
     )
+}
 
+Timeline.getInitialProps = async () => {
+    return Promise.resolve({
+        userName: '@miadeveloper'
+    })
 }
