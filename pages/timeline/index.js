@@ -23,8 +23,17 @@ export default function Timeline({userName}) {
     )
 }
 
+// Timeline.getInitialProps = async () => {
+//     return Promise.resolve({
+//         userName: '@miadeveloper'
+//     })
+// }
+
 Timeline.getInitialProps = async () => {
-    return Promise.resolve({
-        userName: '@miadeveloper'
-    })
+    return fetch('http://localhost:3000//api/hello')
+        .then(res => res.json())
+        .then(response => {
+            const {userName} = response
+            return {userName}
+        })
 }
