@@ -18,6 +18,7 @@ export default function Layout ({children}) {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    flex-direction: column;
                     height: 100vh;
                     padding: 48px 24px;
                 }
