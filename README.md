@@ -1,6 +1,10 @@
 # Project made with Next
 A personal project made with Next to give this technology a shot 
 
+## Project unfinished
+
+Project just created to give Nextjs a shot
+
 ## Available Scripts
 
 In the project directory, you can run:
